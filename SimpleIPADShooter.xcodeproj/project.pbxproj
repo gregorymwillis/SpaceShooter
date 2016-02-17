@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890FBA191C66F55400C3A6F0 /* TitleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 890FBA181C66F55400C3A6F0 /* TitleScene.sks */; };
+		890FBA1B1C66F58700C3A6F0 /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FBA1A1C66F58700C3A6F0 /* TitleScene.swift */; };
+		891BBDB81C65C6B900D2BA6B /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 891BBDB61C65C6B900D2BA6B /* explosion.sks */; };
+		891BBDB91C65C6B900D2BA6B /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 891BBDB71C65C6B900D2BA6B /* spark.png */; };
 		89AE9E041C63BD90006F3334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE9E031C63BD90006F3334 /* AppDelegate.swift */; };
 		89AE9E061C63BD90006F3334 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 89AE9E051C63BD90006F3334 /* GameScene.sks */; };
 		89AE9E081C63BD90006F3334 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE9E071C63BD90006F3334 /* GameScene.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		890FBA181C66F55400C3A6F0 /* TitleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleScene.sks; sourceTree = "<group>"; };
+		890FBA1A1C66F58700C3A6F0 /* TitleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
+		891BBDB61C65C6B900D2BA6B /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
+		891BBDB71C65C6B900D2BA6B /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		89AE9E001C63BD90006F3334 /* SimpleIPADShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleIPADShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AE9E031C63BD90006F3334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89AE9E051C63BD90006F3334 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -104,11 +112,15 @@
 				89AE9E031C63BD90006F3334 /* AppDelegate.swift */,
 				89AE9E051C63BD90006F3334 /* GameScene.sks */,
 				89AE9E071C63BD90006F3334 /* GameScene.swift */,
+				891BBDB61C65C6B900D2BA6B /* explosion.sks */,
+				891BBDB71C65C6B900D2BA6B /* spark.png */,
 				89AE9E091C63BD90006F3334 /* GameViewController.swift */,
 				89AE9E0B1C63BD90006F3334 /* Main.storyboard */,
 				89AE9E0E1C63BD90006F3334 /* Assets.xcassets */,
 				89AE9E101C63BD90006F3334 /* LaunchScreen.storyboard */,
 				89AE9E131C63BD90006F3334 /* Info.plist */,
+				890FBA181C66F55400C3A6F0 /* TitleScene.sks */,
+				890FBA1A1C66F58700C3A6F0 /* TitleScene.swift */,
 			);
 			path = SimpleIPADShooter;
 			sourceTree = "<group>";
@@ -199,6 +211,7 @@
 				TargetAttributes = {
 					89AE9DFF1C63BD90006F3334 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = E7CR6YGA9E;
 					};
 					89AE9E171C63BD90006F3334 = {
 						CreatedOnToolsVersion = 7.2;
@@ -236,9 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				89AE9E061C63BD90006F3334 /* GameScene.sks in Resources */,
+				891BBDB91C65C6B900D2BA6B /* spark.png in Resources */,
 				89AE9E121C63BD90006F3334 /* LaunchScreen.storyboard in Resources */,
 				89AE9E0F1C63BD90006F3334 /* Assets.xcassets in Resources */,
+				891BBDB81C65C6B900D2BA6B /* explosion.sks in Resources */,
 				89AE9E0D1C63BD90006F3334 /* Main.storyboard in Resources */,
+				890FBA191C66F55400C3A6F0 /* TitleScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +282,7 @@
 				89AE9E081C63BD90006F3334 /* GameScene.swift in Sources */,
 				89AE9E0A1C63BD90006F3334 /* GameViewController.swift in Sources */,
 				89AE9E041C63BD90006F3334 /* AppDelegate.swift in Sources */,
+				890FBA1B1C66F58700C3A6F0 /* TitleScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,10 +424,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimpleIPADShooter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillisProgramming.SimpleIPADShooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -418,10 +437,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimpleIPADShooter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillisProgramming.SimpleIPADShooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -494,6 +515,7 @@
 				89AE9E2E1C63BD90006F3334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89AE9E2F1C63BD90006F3334 /* Build configuration list for PBXNativeTarget "SimpleIPADShooterTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +524,7 @@
 				89AE9E311C63BD90006F3334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89AE9E321C63BD90006F3334 /* Build configuration list for PBXNativeTarget "SimpleIPADShooterUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +533,7 @@
 				89AE9E341C63BD90006F3334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

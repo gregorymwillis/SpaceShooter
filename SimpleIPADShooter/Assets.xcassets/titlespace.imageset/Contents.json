@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "SpaceShip.png",
+      "filename" : "titlespace.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "SpaceShip@2x.png",
+      "filename" : "titlespace@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "SpaceShip@3x.png",
+      "filename" : "titlespace@3x.png",
       "scale" : "3x"
     }
   ],

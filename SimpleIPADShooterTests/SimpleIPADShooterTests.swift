@@ -33,4 +33,12 @@ class SimpleIPADShooterTests: XCTestCase {
         }
     }
     
+    func testIncreaseEnemySpeed() {
+        while score < 101 {
+            score = score + 1
+            scoreNumber = 10
+            
+        }
+    }
+    
 }
