@@ -131,8 +131,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func spawnEnemy() {
-        enemy = SKSpriteNode(imageNamed: "Enemy")
-        enemy?.size = CGSizeMake(40, 40)
+        enemy = SKSpriteNode(imageNamed: "enemyFighter")
+        enemy?.size = CGSize(width: 35, height: 40)
         enemy!.position = CGPoint(x: CGFloat(arc4random_uniform(700) + 300), y: CGRectGetMaxY(self.frame))
         enemy?.physicsBody = SKPhysicsBody(rectangleOfSize: enemy!.size)
         enemy?.physicsBody?.affectedByGravity = false
@@ -169,7 +169,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func spawnStars() {
-        let randomSize = Int(arc4random_uniform(7) + 1)
+        let randomSize = Int(arc4random_uniform(3) + 1)
         let randomSpeed = Double(arc4random_uniform(4) + 1)
        
         stars = SKSpriteNode(color: UIColor.whiteColor(), size: CGSize(width: randomSize, height: randomSize))
